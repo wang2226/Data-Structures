@@ -1,4 +1,4 @@
-all: DoubleLinkedList HashTable Queque BinTree Heap BinarySearchD
+all: DoubleLinkedList HashTable Queque BinTree Heap BinarySearchD MergeSort QuickSort
 
 DoubleLinkedList: DoubleLinkedList.h DoubleLinkedList.cpp
 	g++ -g -o DoubleLindedList DoubleLinkedList.cpp
@@ -18,5 +18,11 @@ Heap: Heap.h Heap.cpp
 BinarySearchD: BinarySearchD.h BinarySearchD.cpp
 	g++ -g -o BinarySearchD BinarySearchD.cpp
 
+MergeSort: MergeSort.cpp
+	g++ -g -o MergeSort MergeSort.cpp
+
+QuickSort: QuickSort.cpp
+	g++ -g -o QuickSort QuickSort.cpp
+
 clean:
-	rm -f *.o *.out DoubleLinkedList HashTable Queque Heap BinTree BinarySearchD
+	rm -f *.o *.out DoubleLinkedList HashTable Queque Heap BinTree BinarySearchD MergeSort QuickSort

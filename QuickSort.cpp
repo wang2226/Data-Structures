@@ -7,9 +7,9 @@
 //							   the elements in Equal are equal to x
 //							   the elements in Greater are larger than x
 //					2. Recur
-//					- quickSort(Larger), Equal, quickSort(Greater)
+//					- quickSort(Less), Equal, quickSort(Greater)
 //					3. Conquer
-//					- put elements in Larger, Equal, Greater back into array
+//					- put elements in Less, Equal, Greater back into array
 // Average case time complexity is O(n*log(n))
 // Worst case time complexity is O(n^2)
 

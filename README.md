@@ -37,3 +37,5 @@
 	- O(n + k) k is the number of buckets
 * Rabin-Karp Algorithm
 	- O(n + m)
+* Depth First Search
+	- O(V + E) V is # of vertices and E is # of edges

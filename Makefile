@@ -1,4 +1,4 @@
-all: DoubleLinkedList HashTable Queque BinTree Heap BinarySearchD MergeSort QuickSort RadixSort BucketSort rkStrStr
+all: DoubleLinkedList HashTable Queque BinTree Heap BinarySearchD MergeSort QuickSort RadixSort BucketSort rkStrStr DFS BFS 
 
 DoubleLinkedList: DoubleLinkedList.h DoubleLinkedList.cpp
 	g++ -g -o DoubleLindedList DoubleLinkedList.cpp
@@ -33,5 +33,11 @@ BucketSort: BucketSort.cpp
 rkStrStr: rkStrStr.cpp
 	g++ -g -o rkStrStr rkStrStr.cpp
 
+DFS: DFS.cpp
+	g++ -g -o DFS DFS.cpp
+
+BFS: BFS.cpp
+	g++ -g -o BFS BFS.cpp
+
 clean:
-	rm -f *.o *.out DoubleLinkedList HashTable Queque Heap BinTree BinarySearchD MergeSort QuickSort RadixSort BucketSort rkstrstr core
+	rm -f *.o *.out DoubleLinkedList HashTable Queque Heap BinTree BinarySearchD MergeSort QuickSort RadixSort BucketSort rkstrstr DFS core

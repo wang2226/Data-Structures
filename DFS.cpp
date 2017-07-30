@@ -32,7 +32,7 @@ void Graph::DFSUtil(int v, bool visited[])
 	printf("%d ", v);
 
 	// Recur for all the vertices adjacent to this vertex
-	list<int>::iterator i;
+	list <int>::iterator i;
 
 	for(i = adj[v].begin(); i != adj[v].end(); ++i){
 		if(!visited[*i]){
@@ -45,7 +45,7 @@ void Graph::DFSUtil(int v, bool visited[])
 void Graph::DFS()
 {
 	// Mark all the vertices as not visited
-	bool *visited = new bool[V];
+	bool * visited = new bool [V];
 
 	for (int i = 0; i < V; i++){
 		visited[i] = false;
@@ -66,15 +66,15 @@ int main()
 	Graph g(4);
 	g.addEdge(0, 1);
 	g.addEdge(0, 2);
-    g.addEdge(1, 2);
-    g.addEdge(2, 0);
-    g.addEdge(2, 3);
-    g.addEdge(3, 3);
-
-    printf("Following is Depth First Traversal\n");
-    g.DFS();
+	g.addEdge(1, 2);
+	g.addEdge(2, 0);
+	g.addEdge(2, 3);
+	g.addEdge(3, 3);
+	
+	printf("Following is Depth First Traversal\n");
+	g.DFS();
 	printf("\n");
 
-    return 0;
+	return 0;
 }
 

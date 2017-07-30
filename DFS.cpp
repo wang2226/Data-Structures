@@ -17,7 +17,7 @@ class Graph
 Graph::Graph(int V)
 {
 	this->V = V;
-	adj = new list<int>[V];
+	adj = new list<int> [V];
 }
 
 void Graph::addEdge(int v, int w)

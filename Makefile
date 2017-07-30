@@ -40,4 +40,4 @@ BFS: BFS.cpp
 	g++ -g -o BFS BFS.cpp
 
 clean:
-	rm -f *.o *.out DoubleLinkedList HashTable Queque Heap BinTree BinarySearchD MergeSort QuickSort RadixSort BucketSort rkstrstr DFS core
+	rm -f *.o *.out DoubleLinkedList HashTable Queque Heap BinTree BinarySearchD MergeSort QuickSort RadixSort BucketSort rkstrstr DFS BFS core

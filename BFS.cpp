@@ -26,8 +26,7 @@ void Graph::addEdge(int v, int w)
 	adj[v].push_back(w); // Add w to v’s list.
 }
 
-void Graph::BFS(int s)
-{
+void Graph::BFS(int s) {
 	// Mark all the vertices as not visited
 	bool *visited = new bool[V];
 
@@ -45,17 +44,16 @@ void Graph::BFS(int s)
     // 'i' will be used to get all adjacent vertices of a vertex
     list<int>::iterator i;
 
-    while(!queue.empty())
-    {
+    while(!queue.empty()) {
 		// Dequeue a vertex from queue and print it
         s = queue.front();
        	printf("%d ", s);
        	queue.pop_front();
 
-       // Get all adjacent vertices of the dequeued vertex s
-       // If a adjacent has not been visited, then mark it visited
-       // and enqueue it
-       for(i = adj[s].begin(); i != adj[s].end(); ++i) {
+       	// Get all adjacent vertices of the dequeued vertex s
+       	// If a adjacent has not been visited, then mark it visited
+       	// and enqueue it
+       	for(i = adj[s].begin(); i != adj[s].end(); ++i) {
 			if(!visited[*i]) {
 				visited[*i] = true;
 	        	queue.push_back(*i);
@@ -65,8 +63,7 @@ void Graph::BFS(int s)
 }
 
 // Driver program to test methods of graph class
-int main()
-{
+int main() {
 	// Create a graph given in the above diagram
 	Graph g(4);
     g.addEdge(0, 1);
@@ -78,6 +75,7 @@ int main()
 
     printf("Following is Breadth First Traversal (starting from vertex 2)\n");
 	g.BFS(2);
+	printf("\n");
 
 	return 0;
 }

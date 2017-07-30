@@ -39,3 +39,5 @@
 	- O(n + m)
 * Depth First Search
 	- O(V + E) V is # of vertices and E is # of edges
+* Breadth First Search
+	- O(V + E) V is # of vertices and E is # of edges
